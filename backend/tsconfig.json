@@ -3,6 +3,8 @@
     "module": "commonjs",
     "target": "es6",
     "types": [],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
@@ -10,12 +12,11 @@
     "exactOptionalPropertyTypes": true,
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"], 
+  "include": ["src/**/*.ts", "src/controllers/userController.ts", "src/routes/userRoutes.ts", "src/server.ts"], 
   "exclude": ["node_modules"]
 }
